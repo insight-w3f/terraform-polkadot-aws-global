@@ -2,7 +2,7 @@ resource "aws_iam_instance_profile" "api_asg" {
   count = var.api_asg_enable ? 1 : 0
 
   name = "node_describe_instance_profile"
-  role = join(aws_iam_role.api_asg.*.name)
+  role = join("", aws_iam_role.api_asg.*.name)
 }
 
 resource "aws_iam_role" "api_asg" {
