@@ -37,7 +37,7 @@ No issue is creating limit on this module.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
-| api\_asg\_enable | Enable API ASG outputs | `bool` | `false` | no |
+| api\_asg\_enable | Enable API ASG IAM role | `bool` | `true` | no |
 
 ## Outputs
 
